@@ -14,6 +14,7 @@
 		924A41091FDF0243001974F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924A41071FDF0243001974F3 /* LaunchScreen.storyboard */; };
 		924A41141FDF0243001974F3 /* voicesynthprojTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A41131FDF0243001974F3 /* voicesynthprojTests.swift */; };
 		924A411F1FDF0243001974F3 /* voicesynthprojUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A411E1FDF0243001974F3 /* voicesynthprojUITests.swift */; };
+		924A412E1FDF027F001974F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924A412D1FDF027F001974F3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		924A411A1FDF0243001974F3 /* voicesynthprojUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voicesynthprojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924A411E1FDF0243001974F3 /* voicesynthprojUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voicesynthprojUITests.swift; sourceTree = "<group>"; };
 		924A41201FDF0243001974F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924A412D1FDF027F001974F3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924A412E1FDF027F001974F3 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				924A41121FDF0243001974F3 /* voicesynthprojTests */,
 				924A411D1FDF0243001974F3 /* voicesynthprojUITests */,
 				924A40FC1FDF0243001974F3 /* Products */,
+				924A412C1FDF027F001974F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				924A41201FDF0243001974F3 /* Info.plist */,
 			);
 			path = voicesynthprojUITests;
+			sourceTree = "<group>";
+		};
+		924A412C1FDF027F001974F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				924A412D1FDF027F001974F3 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = creativerodriguez.voicesynthproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = creativerodriguez.voicesynthproj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
